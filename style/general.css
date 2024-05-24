@@ -1,0 +1,146 @@
+body {
+    background: #f8f8f8;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 150px;
+    background: url('../images/header_background.png') repeat;
+}
+
+.shop_name {
+    float: left;
+    width: 250px;
+    margin: 51px 0;
+    text-align: center;
+    color: rgb(1, 86, 107);
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+.menu {
+    list-style-type: none;
+    float: right;
+    margin-right: 15px;
+    padding: 0;
+    height: 30px;
+}
+
+.root {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    text-align: center;
+    width: 112px;
+}
+
+.root::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    content: "";
+}
+
+.root a {
+    display: inline-block;
+    color: rgb(1, 127, 158);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+.root a:hover {
+    color: rgb(1, 86, 107);
+    font-size: 24px;
+}
+
+.root:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+    left: -18px;
+    width: 180%;
+    list-style-type: none;
+    text-align: left;
+}
+
+.footer {
+    text-align: right;
+    height: 100px;
+    background: rgb(0, 42, 53);
+    padding: 15px 15px 0 0;
+    color: white;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .shop_name {
+        width: 100%;
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .menu {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .root {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .root a {
+        font-size: 18px;
+    }
+
+    .root a:hover {
+        font-size: 20px;
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+        left: 0;
+    }
+
+    .header {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .shop_name {
+        font-size: 16px;
+    }
+
+    .root a {
+        font-size: 16px;
+    }
+
+    .root a:hover {
+        font-size: 18px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 10px 15px;
+        height: auto;
+    }
+}

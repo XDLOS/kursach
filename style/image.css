@@ -1,0 +1,64 @@
+.product_unit img {
+    height: 235px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.header img {
+    float: left;
+    height: 100%;
+    margin: 0 15px;
+}
+
+.catalog_image {
+    display: block;
+    width: 100%;
+}
+
+.game_image {
+    width: 20%;
+    border: rgb(1, 86, 107) solid 4px;
+    float: left;
+    margin-right: 15px;
+}
+
+.game_image:hover {
+    border-color: transparent;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .product_unit img {
+        height: auto;
+        width: 100%;
+    }
+
+    .header img {
+        width: 100px;
+        height: auto;
+        margin: 0 10px;
+    }
+
+    .game_image {
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    .game_image:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .header img {
+        width: 80px;
+        height: auto;
+        margin: 0 5px;
+    }
+
+    .game_image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

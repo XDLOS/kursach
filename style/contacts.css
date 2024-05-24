@@ -1,0 +1,64 @@
+.contact_form textarea {
+    width: 800px;
+    height: 100px;
+}
+
+.contact_form label {
+    display: inline-block;
+    line-height: 45px;
+    width: 220px;
+}
+
+.contact_form input[type="text"],
+.contact_form input[type="email"] {
+    width: 400px;
+    height: 35px;
+    font-size: 20px;
+    color: rgb(0, 76, 95);
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+.contact_form input[type="email"]:focus {
+    background: rgb(0, 76, 95);
+    color: white;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .contact_form textarea {
+        width: 100%; /* Полная ширина для экрана */
+        height: 100px; /* Высоту можно оставить той же или изменить по необходимости */
+    }
+
+    .contact_form label {
+        width: 100%; /* Полная ширина для экрана */
+        text-align: left; /* Выравнивание текста по левому краю */
+        line-height: normal; /* Сброс линии высоты для мобильных */
+        margin-bottom: 10px; /* Добавление отступа снизу */
+    }
+
+    .contact_form input[type="text"],
+    .contact_form input[type="email"] {
+        width: 100%; /* Полная ширина для экрана */
+        height: 35px; /* Высоту можно оставить той же или изменить по необходимости */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact_form textarea {
+        width: 100%; /* Полная ширина для экрана */
+        height: 80px; /* Высота для маленьких экранов */
+    }
+
+    .contact_form input[type="text"],
+    .contact_form input[type="email"] {
+        width: 100%; /* Полная ширина для экрана */
+        height: 30px; /* Высота для маленьких экранов */
+        font-size: 18px; /* Уменьшение размера шрифта */
+    }
+
+    .contact_form label {
+        line-height: 1.5; /* Высота строки */
+    }
+}
