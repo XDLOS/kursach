@@ -244,6 +244,7 @@ body, html {
     background: #f8f8f8;
     padding-left: 25px;
     margin-bottom: 30px;
+    
 }
 
 .content_right_product::after {
@@ -610,6 +611,7 @@ body, html {
 
     .content_right_header {
         padding-left: 15px;
+        margin-top: 30px;
     }
 
     .instagram_feed_images {

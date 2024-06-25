@@ -29,7 +29,7 @@
 /* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
     .product_unit img {
-        height: auto;
+        height: 230px;
         width: 100%;
     }
 

@@ -1,5 +1,6 @@
 .product_img_and_short_descroption::after {
     display: block;
+    flex-direction: column;
     clear: both;
     content: "";
 }
@@ -87,6 +88,13 @@ table.product_features td:nth-child(2) {
 
 /* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
+    .product_img_and_short_descroption::after {
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+    }
+
     .product_short_description_wrap {
         float: none;
         width: 100%;

@@ -10,7 +10,7 @@ body {
 
 .header {
     height: 150px;
-    background: url('../images/header_background.png') repeat;
+    
 }
 
 .shop_name {
@@ -98,6 +98,7 @@ body {
         float: none;
         text-align: center;
         margin: 10px 0;
+        height: auto;
     }
 
     .root {
